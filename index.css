@@ -132,6 +132,7 @@ a{
 .sociais {
     margin-left: 24px; /* mesma margem do botão */
     margin-right: 24px; /* mesma margem do botão */
+    margin-top:24px;
     background-color: #FFFFFF;
     padding: 16px 16px; /* remova a margem interna horizontal */
     border-radius: 25px;
