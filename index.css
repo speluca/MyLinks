@@ -132,7 +132,6 @@ a{
 .sociais {
     margin-left: 24px; /* mesma margem do botão */
     margin-right: 24px; /* mesma margem do botão */
-    margin-top:24px;
     background-color: #FFFFFF;
     padding: 16px 16px; /* remova a margem interna horizontal */
     border-radius: 25px;
@@ -192,6 +191,9 @@ a{
         border-radius: 25px;
         padding: 10px 24px;
     }
+    .sociais {
+        margin-top:24px;        
+    }
   
 }
 
@@ -218,6 +220,9 @@ a{
     h4{
         margin-bottom: 24px;
     }
+    .sociais {
+        margin-top:24px;        
+    }
   
 }
 @media (min-width: 320px) and (max-width: 449px){
@@ -237,6 +242,9 @@ a{
     margin-right: 2px;
     margin-left: 2px;
     height: 30px; /* Defina uma altura fixa para a imagem */
+    }
+    .sociais {
+        margin-top:24px;        
     }
  
 }
