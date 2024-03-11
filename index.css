@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Montserrat,sans-serif;
+}
+main section{
+    background-color: #000000;
+}
+h2{
+    margin-bottom: 24px;
+   
+}
+h4{
+    margin-bottom: 42px;
+}
+h2,h4{
+    color:#FFFFFF;
+}
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.perfil{
+    margin-top: 48px;
+    border-radius: 400px;
+}
+
+.links{
+    align-itens: center;
+    text-align:center;
+}
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar os botões horizontalmente */
+}
+.bot1, .bot2, .bot3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(33.33% - 16px);
+    margin: 16px;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    background-color: #007bff;
+    border-radius: 25px;
+    padding: 10px 24px;
+}
+
+.bot1 a, .bot2 a, .bot3 a {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.bot1 img, .bot2 img, .bot3 img {
+    margin-right: 8px;
+    height: 30px; /* Defina uma altura fixa para a imagem */
+}
+.bot1, .bot2, .bot3 {
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.bot1:hover, .bot2:hover, .bot3:hover {
+    transform: scale(1.05); /* Aumenta o tamanho em 5% ao passar o mouse */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+}
+
+.bot1 {
+    position: relative;
+}
+
+.bot1::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 30px;
+    animation: pulse 2s infinite;
+}
+
+.bot1 {
+    animation: blink 2s ease-in-out infinite; /* Define a animação de piscar */
+}
+
+
+.sociais {
+    margin-left: 24px; /* mesma margem do botão */
+    margin-right: 24px; /* mesma margem do botão */
+    background-color: #FFFFFF;
+    padding: 16px 16px; /* remova a margem interna horizontal */
+    border-radius: 25px;
+    display: inline-block; /* permitir centralização horizontal */
+}
+
+.sociais img {
+    display: block;
+    margin: 0 auto; /* centralizar horizontalmente */
+}
+.sociais {
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.sociais:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+}
+
+.logo{
+    margin:32px;
+}
+@media (max-width: 450px){
+    .bot1, .bot2, .bot3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(53.33% - 16px);
+        margin: 8px;
+        margin-left: 4.0rem;
+        margin-right: 4.0rem;
+        background-color: #007bff;
+        border-radius: 25px;
+        padding: 10px 24px;
+    }
+    .logo{
+        margin:20px;
+    }
+    h2{
+        margin-bottom: 12px;
+       
+    }
+    h4{
+        margin-bottom: 24px;
+    }
+}
+@media (min-width: 880px) and (max-width: 1050px){
+    .bot1, .bot2, .bot3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(43.33% - 16px);
+        margin: 16px;
+        margin-left: 4.0rem;
+        margin-right: 4.0rem;
+        background-color: #007bff;
+        border-radius: 25px;
+        padding: 10px 24px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 879px){
+    .bot1, .bot2, .bot3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(53.33% - 16px);
+        margin: 10px;
+        margin-left: 4.0rem;
+        margin-right: 4.0rem;
+        background-color: #007bff;
+        border-radius: 25px;
+        padding: 10px 24px;
+    }
+    .logo{
+        margin:20px;
+    }
+    h2{
+        margin-bottom: 12px;
+       
+    }
+    h4{
+        margin-bottom: 24px;
+    }
+}
+@media (min-width: 320px) and (max-width: 449px){
+    .bot1, .bot2, .bot3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(63.33% - 16px);
+        margin: 10px;
+        margin-left: 4.0rem;
+        margin-right: 4.0rem;
+        background-color: #007bff;
+        border-radius: 25px;
+        padding: 10px 24px;
+    }
+.bot1 img, .bot2 img, .bot3 img {
+    margin-right: 2px;
+    margin-left: 2px;
+    height: 30px; /* Defina uma altura fixa para a imagem */
+    }
+}
