@@ -17,10 +17,12 @@ footer {
     text-align: center; /* Centralizar o texto */
 }
 
+
 footer p{
     color:#FFFFFF;
     text-align: center;
     font-size: 10px;
+    margin-botton: 48px;
 }
 h2{
     margin-bottom: 24px;
